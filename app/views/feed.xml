@@ -1,0 +1,48 @@
+<Alloy>
+	<Tab title="Feed" icon="">
+			<Window title="Feed">
+				<RightNavButton platform="ios">
+					<Button id="cameraButton" systemButton="CAMERA"></Button>
+				</RightNavButton>
+				<ListView id="listView" defaultItemTemplate="socialTemplate">
+					
+					<Templates>
+						<ItemTemplate id="socialTemplate" name="socialTemplate">
+							<View id="viewContainer">
+								<View id="userProfileContainer">
+									<ImageView id="profilePic" bindId="profilePic"></ImageView>
+									<Label id="userName" bindId="username"></Label>
+								</View>
+								<View id="postArea" bindId="postArea">
+									<ImageView id="postPhoto" bindId="postPhoto"></ImageView>
+									<Label id="postBody" bindId="content"></Label>
+								</View>
+								<View id="socialIcons">
+									<View layout="horizontal">
+										<ImageView id="likesIcon"></ImageView>
+										<Label id="likesCount"></Label>
+										<ImageView id="commentsIcon"></ImageView>
+										<Label id="commentsCount"></Label>
+									</View>
+									<Button id="trashIcon"></Button>
+								</View>
+								<View id="socialButtons" height="60dp">
+									<Button id="likeIt"></Button>
+									<Button id="commentIt"></Button>
+								</View>
+							</View>
+						</ItemTemplate>
+					</Templates>
+					
+					<ListSection id="listSection"></ListSection>
+				</ListView>
+				<OptionDialog id="options" title="App Options"  cancel="2">
+						<Options>
+							<Option>Camera</Option>
+							<Option>Camera Roll</Option>
+							<Option>cancel</Option>
+						</Options>
+			</OptionDialog>
+			</Window>
+		</Tab>
+</Alloy>

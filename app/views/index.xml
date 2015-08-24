@@ -1,0 +1,15 @@
+<Alloy>
+	<TabGroup id="tabGroup">
+		<Tab id="gratefulsTab" title="Gratefuls">
+			<Window  title="Gratefuls">
+				<View>
+					<Label>Gratefuls Tab</Label>
+				</View>
+			</Window>
+		</Tab>
+		<Require id="feedController" src="feed"></Require>
+		<Require id="friendsController" src="friends"></Require>
+		<Require id="settingsController" src="settings"></Require>
+	</TabGroup>
+	 <ActivityIndicator style=Ti.UI.iPhone.ActivityIndicatorStyle.DARK id="activityIndicator" message="Loading..."/>
+</Alloy>

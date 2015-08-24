@@ -1,0 +1,7 @@
+<Alloy>
+	<Tab title="Friends" icon="">
+			<Window title="Friends">
+				<Label>Friends Tab</Label>
+			</Window>
+		</Tab>
+</Alloy>

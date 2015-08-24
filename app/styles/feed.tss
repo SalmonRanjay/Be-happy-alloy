@@ -1,0 +1,131 @@
+
+".container" : {
+  
+}
+
+"#listView":{
+	height: Titanium.UI.FILL,
+	width: Titanium.UI.FILL
+}
+
+"#socialTemplate":{
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE
+	//backgroundColor: "orange"
+}
+
+"#viewContainer":{
+	height: 400,
+	width: Titanium.UI.FILL,
+	layout: "vertical"
+}
+
+"#userProfileContainer":{
+	height: 60,
+	width: Titanium.UI.FILL,
+	layout: "horizontal",
+	top: 10,
+	left: 20
+}
+
+"#profilePic":{
+	height: 40,
+	width: 40,
+	defaultImage: "/images/userplaceholder.png",
+	left: 5
+}
+
+"#username":{
+	left: 2,
+	width: Ti.UI.FILL,
+	height: Titanium.UI.SIZE
+}
+
+"#postArea":{
+	height: 230,
+	width: "85%",
+	layout: "vertical",
+	top: 5
+}
+
+"#postPhoto":{
+	height: 200,
+	width: Titanium.UI.FILL
+}
+
+"#postBody":{
+	top: 10
+}
+
+"#socialIcons":{
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.FILL,
+	top: 10,
+	left: 20
+}
+
+"#likesIcon":{
+	height: 30,
+	width: 30,
+	left: 5,
+	image: "/images/heart_nofill.png"
+}
+
+"#likesCount":{
+
+}
+
+"#commentsIcon":{
+	height: 30,
+	width: 30,
+	left: 5,
+	image: "/images/comment_nofill.png"
+	
+}
+
+"#commentsCount":{
+	
+}
+
+"#trashIcon":{
+	right: 20,
+	height: 30,
+	width: 30,
+	image: "/images/trashIcon.png",
+	top: 0
+}
+
+"#socialButtons":{
+	height: "70dp",
+	width: "200dp",
+	layout: "horizontal",
+	backgroundColor: "orange",
+	top: 10
+}
+
+"#likeIt":{
+	height: 40,
+	width: 60,
+	title: "Like"
+}
+
+"#commentIt":{
+	height: 40,
+	width: 60,
+	title: "Comment"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
