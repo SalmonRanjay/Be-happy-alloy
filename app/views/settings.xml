@@ -1,6 +1,6 @@
 <Alloy>
 	<Tab id="settingsTab" title="Settings" icon="">
-		<Window title="Settings">
+		<Window id="settingsWindow" title="Settings">
 			
 			
 			<ListView id="listView" defaultItemTemplate="settingsTemplate">

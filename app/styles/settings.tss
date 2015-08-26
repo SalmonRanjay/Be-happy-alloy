@@ -3,6 +3,11 @@
   
 }
 
+"#settingsWindow":{
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL
+}
+
 "#listView":{
 	height: Titanium.UI.FILL,
 	width: Titanium.UI.FILL

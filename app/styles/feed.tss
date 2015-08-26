@@ -15,7 +15,7 @@
 }
 
 "#viewContainer":{
-	height: 400,
+	height: Titanium.UI.SIZE,
 	width: Titanium.UI.FILL,
 	layout: "vertical"
 }
@@ -99,7 +99,6 @@
 	height: "70dp",
 	width: "200dp",
 	layout: "horizontal",
-	backgroundColor: "orange",
 	top: 10
 }
 
@@ -111,7 +110,7 @@
 
 "#commentIt":{
 	height: 40,
-	width: 60,
+	width: 80,
 	title: "Comment"
 }
 

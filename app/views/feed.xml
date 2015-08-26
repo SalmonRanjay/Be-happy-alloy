@@ -18,7 +18,7 @@
 									<Label id="postBody" bindId="content"></Label>
 								</View>
 								<View id="socialIcons">
-									<View layout="horizontal">
+									<View layout="horizontal" height="Titanium.UI.SIZE">
 										<ImageView id="likesIcon"></ImageView>
 										<Label id="likesCount"></Label>
 										<ImageView id="commentsIcon"></ImageView>

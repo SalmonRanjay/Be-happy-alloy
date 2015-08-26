@@ -69,6 +69,7 @@ function makeRequest(_action, _data){
 				    console.log("login in request lib");
 					var response = JSON.parse(this.responseText);
 					Ti.App.Properties.setString('session-token', response.sessionToken);
+					Alloy.Globals.currentUser = response;
 					return deferred.resolve(response);
 					
 					break;
@@ -80,6 +81,7 @@ function makeRequest(_action, _data){
 				    console.log("log out in request lib");
 				    var response = JSON.parse(this.responseText);
 				    Ti.App.Properties.removeProperty('session-token');
+				    Alloy.Globals.currentUser = null;
 				    return deferred.resolve(response);
 				    break;
 				case 'isLoggedIn' :
