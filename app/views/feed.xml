@@ -1,6 +1,6 @@
 <Alloy>
-	<Tab title="Feed" icon="">
-			<Window title="Feed">
+	<Tab id="feedTab" title="Feed" icon="/images/hearts-icon.png">
+			<Window id="tabWindow" title="Feed">
 				<RightNavButton platform="ios">
 					<Button id="cameraButton" systemButton="CAMERA"></Button>
 				</RightNavButton>
@@ -36,13 +36,7 @@
 					
 					<ListSection id="listSection"></ListSection>
 				</ListView>
-				<OptionDialog id="options" title="App Options"  cancel="2">
-						<Options>
-							<Option>Camera</Option>
-							<Option>Camera Roll</Option>
-							<Option>cancel</Option>
-						</Options>
-			</OptionDialog>
+				
 			</Window>
 		</Tab>
 </Alloy>

@@ -1,0 +1,38 @@
+
+".container" : {
+  
+}
+"#createGrateulsWindow":{
+	height: Titanium.UI.FILL,
+	width: Titanium.UI.FILL
+}
+
+"#scrollview":{
+	height: Titanium.UI.FILL,
+	width: Titanium.UI.FILL,
+	layout: "vertical"
+}
+
+"#closeWindow":{
+	left: 5,
+	height: 10,
+	width: Titanium.UI.SIZE,
+	top: 40
+}
+
+".textFieldProperties":{
+	width: "80%",
+	height: 30,
+	borderColor : "black",
+	borderWidth: 1.5,
+	top: 20,
+	hintText: 'Enter Something you are grateful for'
+}
+
+"#positiveExp":{
+	height: 30,
+	width: "80%",
+	hintText: "Enter a positive Experience you had in the past 24 hours",
+	top: 20
+}
+

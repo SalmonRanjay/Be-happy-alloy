@@ -1,0 +1,20 @@
+<Alloy>
+	<Window id="createPostWindow">
+		<View class="container" layout="vertical">
+			<View id="userProfileView">
+				<ImageView id="userPic"></ImageView>
+				<Label id="username"></Label>
+			</View>
+			<TextArea id="postInput" hintText="Enter Post here"></TextArea>
+			<ImageView id="tempImage"></ImageView>
+		</View>
+		<OptionDialog id="options" title="App Options"  cancel="2">
+			<Options>
+				<Option>Camera</Option>
+				<Option>Camera Roll</Option>
+				<Option>cancel</Option>
+			</Options>
+		</OptionDialog>
+		<ActivityIndicator style="Ti.UI.iPhone.ActivityIndicatorStyle.DARK" id="activityIndicator" message="Loading..." style=Ti.UI.iPhone.ActivityIndicatorStyle.DARK />
+	</Window>
+</Alloy>

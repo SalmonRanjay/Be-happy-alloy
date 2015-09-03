@@ -2,3 +2,13 @@
 ".container" : {
   
 }
+
+"#gratefulWindow":{
+	height: Titanium.UI.FILL,
+	width: Titanium.UI.FILL
+}
+
+"#gratfulesTable":{
+	height: Titanium.UI.FILL,
+	width: Titanium.UI.FILL
+}

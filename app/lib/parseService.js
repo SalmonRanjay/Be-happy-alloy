@@ -48,6 +48,18 @@ module.exports.getMessages = function(){
 	
 };
 
+module.exports.createPost = function(post){
+    
+    var data = {
+        url:  baseUrl + "/content/createpost",
+        method: "POST",
+        params : post
+    };
+    
+    return makeRequest('createPost', data);
+    
+};
+
 function makeRequest(_action, _data){
 	
 	var deferred = Q.defer();
@@ -63,13 +75,14 @@ function makeRequest(_action, _data){
 				    console.log("signup in request lib");
 					var response = JSON.parse(this.responseText);
 					Ti.App.Properties.setString('session-token', response.sessionToken);
+					//Alloy.Globals.currentUser = response;
 					return deferred.resolve(response);
 					break;
 				case 'login':
 				    console.log("login in request lib");
 					var response = JSON.parse(this.responseText);
 					Ti.App.Properties.setString('session-token', response.sessionToken);
-					Alloy.Globals.currentUser = response;
+					//Alloy.Globals.currentUser = response;
 					return deferred.resolve(response);
 					
 					break;
@@ -89,6 +102,12 @@ function makeRequest(_action, _data){
 				    var response = JSON.parse(this.responseText);
                   
                     return deferred.resolve(response);
+                    break;
+                case 'createPost' :
+                    Ti.API.info("Received text inside httpcall createPost: " + this.responseText);
+                    var response = JSON.parse(this.responseText);
+                    return deferred.resolve(response);
+                    break;
 				default: 
 					Ti.API.info("Received text inside httpcall defualt: " + this.responseText);
 					var response = JSON.parse(this.responseText);

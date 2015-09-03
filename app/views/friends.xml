@@ -1,5 +1,5 @@
 <Alloy>
-	<Tab title="Friends" icon="">
+	<Tab title="Friends" icon="friends-icon.png">
 			<Window title="Friends">
 				<Label>Friends Tab</Label>
 			</Window>

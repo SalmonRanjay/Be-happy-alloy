@@ -1,0 +1,12 @@
+<Alloy>
+	<Window id="gratefulDetailsWindow">
+		<ScrollView id="scrollview">
+			<Label id="item1L" class="labelProperties"></Label>
+			<Label id="item2L" class="labelProperties"></Label>
+			<Label id="item3L" class="labelProperties"></Label>
+			<Label id="postiveExp" ></Label>
+			
+		</ScrollView>
+	</Window>
+	
+</Alloy>

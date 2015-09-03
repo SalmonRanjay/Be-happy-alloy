@@ -1,4 +1,13 @@
 <Alloy>
-	<View class="container">
-	</View>
+	<Collection src="gratefuls"/>
+	<Tab id='gratfulTab' title="Gratefuls" icon="happy-icon.png">
+		<Window id="gratefulWindow" title="Gratefuls">
+			<RightNavButton platform="ios">
+					<Button id="addButton" systemButton="ADD"></Button>
+				</RightNavButton>
+			<TableView id="gratfulesTable" dataCollection="gratefuls">
+				<TableViewRow title="{title}" item1="{item1}" item2="{item2}" item3="{item3}" positiveExp="{postiveExp}" onClick="showItems"></TableViewRow>
+			</TableView>
+		</Window>
+	</Tab>
 </Alloy>

@@ -39,7 +39,7 @@ var login = function(){
 
 			Ti.API.info("Received text: " + this.responseText);
 			var result = JSON.parse(this.responseText);
-
+            Alloy.Globals.currentUser = result;
 			alert(result);
 			console.log("use the app");
 			console.log(result.sessionToken);

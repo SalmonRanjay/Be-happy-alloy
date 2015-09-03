@@ -3,6 +3,11 @@
   
 }
 
+"#tabWindow":{
+	height: Titanium.UI.FILL,
+	width: Titanium.UI.FILL
+}
+
 "#listView":{
 	height: Titanium.UI.FILL,
 	width: Titanium.UI.FILL

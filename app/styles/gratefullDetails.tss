@@ -1,0 +1,30 @@
+
+".container" : {
+  
+}
+
+"#gratefulDetailsWindow":{
+	height: Titanium.UI.FILL,
+	width: Titanium.UI.FILL,
+}
+
+"#scrollview":{
+	height: Titanium.UI.FILL,
+	width: Titanium.UI.FILL,
+	layout: "vertical"
+}
+
+".labelProperties":{
+	height: 20,
+	width: 150,
+	top: 10
+}
+
+"#postiveExp":{
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE
+}
+
+
+
+

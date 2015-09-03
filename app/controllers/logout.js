@@ -11,7 +11,7 @@ $.logoutButton.addEventListener('click', function(e){
 		console.log(" logout response inside promise: " + response);
 		console.log("logout inside .then");
 		$.activityIndicator.hide();
-		//Ti.App.Properties.removeProperty("session_id");
+		Ti.App.Properties.removeProperty("session-token");
 		
 		var loginController = Alloy.createController('login').getView();
 		loginController.open();

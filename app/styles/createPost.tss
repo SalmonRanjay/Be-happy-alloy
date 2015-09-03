@@ -1,0 +1,45 @@
+
+".container" : {
+  height: Ti.UI.SIZE,
+  width: Ti.UI.SIZE,
+  top: 0
+}
+
+"#createPostWindow":{
+	height: Titanium.UI.FILL,
+	width: Titanium.UI.FILL
+}
+
+"#userProfileView":{
+	height : "40dp",
+	width: Ti.UI.FILL,
+	layout: "horizontal"
+}
+
+"#userPic":{
+	height: Titanium.UI.FILL,
+	width: "40dp",
+	defaultImage: "/images/userplaceholder.png",
+	image: "/images/userplaceholder.png"
+}
+
+"#username":{
+	text: "Ranjay"
+}
+
+"#postInput":{
+	height: 60,
+	width: Ti.UI.FILL,
+	maxLength: 180,
+	hintTextColor: "black",
+	borderWidth: 2,
+	borderStyle: Titanium.UI.INPUT_BORDERSTYLE_LINE
+}
+
+"#tempImage":{
+	height: 40,
+	width: 40,
+	defaultImage: "/images/userplaceholder.png",
+	image: "/images/userplaceholder.png",
+	left: 10
+}

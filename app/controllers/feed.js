@@ -10,7 +10,9 @@ OS_IOS && $.cameraButton.addEventListener("click",function(_event){
 $.cameraButtonClicked = function(_event){
 	
 	//alert("User clicked the button");
-	$.options.show();
+	//$.options.show();
+	var createPostCTRL = Alloy.createController('createPost').getView();
+	$.feedTab.open(createPostCTRL);
 };
 
 
@@ -27,19 +29,4 @@ $.listSection.setItems(data);
 
 
 
-$.options.addEventListener('click', function(e){
-    
-    switch(e.index){
-        
-        case 0:
-            console.log("Camera");
-            break;
-        case 1:
-            console.log("Camera Roll");
-            break;
-         default: 
-            console.log("default");
-            break;
-       
-    }
-});
+

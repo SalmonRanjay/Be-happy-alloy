@@ -1,0 +1,13 @@
+<Alloy>
+	<Window id="createGrateulsWindow">
+		
+		<ScrollView id="scrollview">
+			<Button id="closeWindow">Close</Button>
+			<TextField id="item1TF" class="textFieldProperties"></TextField>
+			<TextField id="item2TF" class="textFieldProperties"></TextField>
+			<TextField id="item3TF" class="textFieldProperties"></TextField>
+			<TextField id="positiveExp" ></TextField>
+			<Button id="saveItems" class="textFieldProperties" onClick="saveGrateFuls">Save</Button>
+		</ScrollView>
+	</Window>
+</Alloy>
