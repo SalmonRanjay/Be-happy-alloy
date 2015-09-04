@@ -15,8 +15,8 @@
 
 "#socialTemplate":{
 	height: Ti.UI.SIZE,
-	width: Ti.UI.SIZE,
-	backgroundColor: "orange"
+	width: Ti.UI.SIZE
+	
 }
 
 "#viewContainer":{

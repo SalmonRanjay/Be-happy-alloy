@@ -21,7 +21,7 @@ parseClient.getPosts().then(function(posts){
        console.log("I: "+ i + "\n");
         
          data.push({
-             
+             template: "socialTemplate",
             profilePic : {
                 image : "/images/userplaceholder.png"
             },
@@ -40,6 +40,8 @@ parseClient.getPosts().then(function(posts){
         });
 
     }
+    
+    $.listSection.setItems(data);
     
     
 },function(error){
@@ -64,7 +66,7 @@ $.cameraButtonClicked = function(_event){
 
 
 
-$.listSection.setItems(data);
+
 //console.log("social buttons height: "+ $.socialButtons.getHeight());
 
 
