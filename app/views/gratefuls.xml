@@ -1,6 +1,6 @@
 <Alloy>
 	<Collection src="gratefuls"/>
-	<Tab id='gratfulTab' title="Gratefuls" icon="happy-icon.png">
+	<Tab id='gratfulTab' title="Gratefuls" icon="/images/happy-icon.png">
 		<Window id="gratefulWindow" title="Gratefuls">
 			<RightNavButton platform="ios">
 					<Button id="addButton" systemButton="ADD"></Button>

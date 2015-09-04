@@ -14,7 +14,10 @@
 									<Label id="userName" bindId="username"></Label>
 								</View>
 								<View id="postArea" bindId="postArea">
-									<ImageView id="postPhoto" bindId="postPhoto"></ImageView>
+									<View bindId="photoContainer" height="200dp" >
+										<ImageView id="postPhoto" bindId="postPhoto"></ImageView>
+									</View>
+									
 									<Label id="postBody" bindId="content"></Label>
 								</View>
 								<View id="socialIcons">

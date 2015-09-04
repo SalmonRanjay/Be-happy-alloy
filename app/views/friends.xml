@@ -1,5 +1,5 @@
 <Alloy>
-	<Tab title="Friends" icon="friends-icon.png">
+	<Tab title="Friends" icon="/images/friends-icon.png" tintColor="yellow">
 			<Window title="Friends">
 				<Label>Friends Tab</Label>
 			</Window>

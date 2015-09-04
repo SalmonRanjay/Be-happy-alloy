@@ -60,6 +60,15 @@ module.exports.createPost = function(post){
     
 };
 
+module.exports.getPosts = function(){
+    var data = {
+      url : baseUrl + "/content/getPosts" ,
+       method: "GET"
+    };
+    
+    return makeRequest('getPosts', data);
+};
+
 function makeRequest(_action, _data){
 	
 	var deferred = Q.defer();
@@ -105,6 +114,11 @@ function makeRequest(_action, _data){
                     break;
                 case 'createPost' :
                     Ti.API.info("Received text inside httpcall createPost: " + this.responseText);
+                    var response = JSON.parse(this.responseText);
+                    return deferred.resolve(response);
+                    break;
+                 case 'getPosts': 
+                    Ti.API.info("Received Posts inside httpcall defualt: " + this.responseText);
                     var response = JSON.parse(this.responseText);
                     return deferred.resolve(response);
                     break;
